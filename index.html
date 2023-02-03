@@ -11,15 +11,36 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
+.back {
+position: relative;
+width: 100%;
+z-index: 1;
+}
+.fillimg {
+  height auto;
+  width: 100%;
+}
+.cage {
+position: absolute;
+left: 0;
+top: 0;
+  height 100%;
+  width: 100%;
+  border: 1px solid blue;
+  z-index: 2;
+}
 </style>
 
 <body>
 
-<div style="text-align:center">
+<div class="back">
+<img src="badclub.jpg" alt="Club Sandwich" class="fillimg">
+</div>
+
+<div class="cage" >
 
 <svg
-   width="100%"
-   height="auto"
+
   viewBox="0 0 100 100"
    version="1.1"
    id="svg596"
@@ -46,11 +67,9 @@ body {
   @keyframes drawtext {
   from {
 	stroke-dashoffset: 100;
-	stroke-opacity="0.0";
 	}
   to {
     stroke-dashoffset: 0;
-	stroke-opacity="0.5";
   }
 }
 </style>
@@ -58,10 +77,10 @@ body {
 
 
  
-  <g id="layer1" transform="translate(-79.666967,-102.93252)">
+  <g id="layer1" transform="scale(2) translate(-76,-100) rotate(10,100,100) ">
     <g fill-opacity="0.0" fill="blue"
        aria-label="CLUB">
-	   <animate attributeName="fill-opacity" dur="4s" values="0;0.3;0" repeatCount="indefinite" />
+	   <animate attributeName="fill-opacity" dur="4s" values="0;0.5;0" repeatCount="indefinite" />
       <path
          d="m 91.54878,108.00714 c -0.321732,-3.04799 -2.133595,-4.77519 -5.469456,-4.79212 -3.725326,0 -6.129854,2.53999 -6.129854,6.33305 0,3.57293 2.218262,6.33306 6.129854,6.33306 3.53906,0 5.520256,-2.5908 5.520256,-5.02919 h -3.657593 c -0.237066,1.15146 -0.711198,2.01506 -1.964262,2.01506 -1.74413,0 -2.302929,-1.69333 -2.302929,-3.31893 0,-1.62559 0.558799,-3.31892 2.302929,-3.31892 1.54093,0 1.862663,1.33773 1.947329,1.77799 z"
          id="path2237" />
@@ -77,7 +96,7 @@ body {
     </g>
     <g fill-opacity="0.0"  fill="blue"
        aria-label="SAND">
-	   	   <animate attributeName="fill-opacity" dur="4s" values="0;0.3;0" repeatCount="indefinite" />
+	   	   <animate attributeName="fill-opacity" dur="4s" values="0;0.5;0" repeatCount="indefinite" />
 
       <path
          d="m 79.94948,126.715 c 0,3.86079 3.962392,4.35186 5.317056,4.35186 2.709328,0 5.587989,-1.016 5.587989,-4.16559 0,-2.2352 -1.69333,-2.9972 -3.403593,-3.48826 -1.69333,-0.44027 -3.454393,-0.67734 -3.505193,-1.524 0,-0.67733 0.829731,-0.8128 1.33773,-0.8128 0.389466,0 0.778932,0.0847 1.100665,0.3048 0.321733,0.2032 0.507999,0.508 0.440266,0.9652 h 3.522126 c -0.08467,-2.92946 -2.421462,-3.94546 -5.046123,-3.94546 -2.489195,0 -4.876791,1.20226 -4.876791,3.99626 0,2.43839 2.184396,2.96333 4.097859,3.50519 2.082796,0.59267 2.607728,0.77893 2.607728,1.38853 0,0.89747 -0.931331,1.10067 -1.54093,1.10067 -0.694266,0 -1.507064,-0.1524 -1.777997,-0.88054 -0.08467,-0.23706 -0.135466,-0.50799 -0.135466,-0.79586 z"
@@ -94,7 +113,7 @@ body {
     </g>
 	<g fill-opacity="0.0" fill="blue"
        aria-label="WICH">
-	   	   <animate attributeName="fill-opacity" dur="4s" values="0;0.3;0" repeatCount="indefinite" />
+	   	   <animate attributeName="fill-opacity" dur="4s" values="0;0.5;0" repeatCount="indefinite" />
 
       <path
          d="m 96.493301,133.87434 h -3.674526 l -1.507064,7.56918 h -0.03387 l -1.422397,-7.56918 h -3.28506 l -1.456264,7.46758 h -0.03387 l -1.473198,-7.46758 H 79.94946 l 3.28506,12.09037 h 3.640659 l 1.269998,-7.36598 h 0.03387 l 1.303865,7.36598 h 3.623726 z"
@@ -114,7 +133,6 @@ body {
   
 </div>
 
-<p style="text-align:center" >Club Sandwich Cycling Club</p>
 </body>
 
 </html>
